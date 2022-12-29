@@ -1,0 +1,49 @@
+{
+    "type": "bubble",
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "歡迎來到幫助欄位",
+          "size": "xl",
+          "weight": "bold"
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "1. /help [回傳幫助欄位]"
+            },
+            {
+              "type": "text",
+              "text": "2. /joke [講一個無趣的笑話]"
+            },
+            {
+              "type": "text",
+              "text": "3. /g [向你打招呼]"
+            },
+            {
+              "type": "text",
+              "text": "4. /ping [回傳回傳速度]"
+            },
+            {
+              "type": "text",
+              "text": "5. /author [回傳作者資訊]"
+            },
+            {
+              "type": "text",
+              "text": "6. /me [回傳你的資訊]"
+            },
+            {
+              "type": "text",
+              "text": "7. /echo 參數 [學你說話]"
+            }
+          ]
+        }
+      ]
+    }
+  }
