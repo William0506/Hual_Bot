@@ -1,4 +1,4 @@
-# `Sussy_Baka千樺
+# `Sussy_Baka千樺`
 <div>
 <img src="https://upload.cc/i1/2022/12/30/fWuj7D.png">
 </div>
