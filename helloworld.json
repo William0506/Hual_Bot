@@ -1,0 +1,48 @@
+{
+    "type": "bubble",
+    "hero": {
+      "type": "image",
+      "aspectMode": "cover",
+      "size": "5xl",
+      "gravity": "top",
+      "url": "https://profile.line-scdn.net/0h4iINWucKa0Z0N36JCq8UEUhyZSsDGW0ODFIjKQIwMHZRBixFHFUjJlA-Nn8OVCkXQAMkcwI1NSYL"
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "初次見面，你好",
+          "size": "xxl",
+          "weight": "bold"
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "主人，請用 /help 呼喚我",
+              "margin": "none",
+              "weight": "regular"
+            }
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "button",
+          "action": {
+            "type": "uri",
+            "label": "Github原始碼",
+            "uri": "https://github.com/TLcut/Hual_Bot"
+          }
+        }
+      ]
+    }
+  }

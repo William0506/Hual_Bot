@@ -15,6 +15,7 @@ import src.TextCommands.me as me
 import src.TextCommands.echo as echo
 import time
 import requests
+import json
 
 def lineNotifyMessage(token, msg):
     headers = {
@@ -43,6 +44,17 @@ def callback():
         abort(400)
     return 'OK'
 
+# Follow event
+@handler.add(FollowEvent)
+def followed(event):
+    token = event.reply_token
+    bot_profile = line_bot_api.get_bot_info()
+    with open("helloworld.json",mode="r",encoding="utf-8") as file:
+        msg = json.load(file)
+        msg["hero"]["url"] = "https://profile.line-scdn.net/0h4iINWucKa0Z0N36JCq8UEUhyZSsDGW0ODFIjKQIwMHZRBixFHFUjJlA-Nn8OVCkXQAMkcwI1NSYL"
+    line_bot_api.reply_message(token,FlexSendMessage('flex',msg))
+    print("join")
+
 # Message event
 @handler.add(MessageEvent)
 def handle_message(event):
@@ -51,10 +63,11 @@ def handle_message(event):
     
     #資訊
     token = event.reply_token
+    bot_profile = line_bot_api.get_bot_info()
     token_notify = 'DE60rfYceaSZVLL8QglgTrR6PTbj54VVkdU0wQAIpnE'
     UserId = event.source.user_id
     profile = line_bot_api.get_profile(UserId)
-    print(profile)
+    print(bot_profile)
     #文字處理
     if event.message.type == "text":
         message = event.message.text
