@@ -1,0 +1,43 @@
+{
+    "type": "bubble",
+    "hero": {"type": "image", 
+    "url": "https://sprofile.line-scdn.net/0hLfGx5Q0KE0lqAQaOObJtNhpRECNJcEpbEW8OfQoCRX5SNlVNFGQPL10DGiwHMwEcFmcPJgtVSS1mEmQvdFfvfW0xTX5TN1IYQGBVrA",
+    "size": "full",
+    "gravity": "top",
+    "aspectMode": "cover"},
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "TLChen",
+          "size": "xl",
+          "weight": "bold"
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "一位邊緣的中學生"
+            },
+            {
+              "type": "text",
+              "text": "喜愛寫程式和畫畫"
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "GitHub",
+                "uri": "https://github.com/TLcut"
+              },
+              "style": "link"
+            }
+          ]
+        }
+      ]
+    }
+  }

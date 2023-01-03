@@ -16,6 +16,7 @@ import src.TextCommands.echo as echo
 import time
 import requests
 import json
+import os
 
 def lineNotifyMessage(token, msg):
     headers = {
@@ -49,7 +50,7 @@ def callback():
 def followed(event):
     token = event.reply_token
     bot_profile = line_bot_api.get_bot_info()
-    with open("helloworld.json",mode="r",encoding="utf-8") as file:
+    with open("C:\\Users\\User\\Documents\\GitHub\\Hual_Bot\\src\\Data\\ helloworld.json",mode="r",encoding="utf-8") as file:
         msg = json.load(file)
         msg["hero"]["url"] = "https://profile.line-scdn.net/0h4iINWucKa0Z0N36JCq8UEUhyZSsDGW0ODFIjKQIwMHZRBixFHFUjJlA-Nn8OVCkXQAMkcwI1NSYL"
     line_bot_api.reply_message(token,FlexSendMessage('flex',msg))
@@ -119,7 +120,6 @@ def handle_message(event):
                 line_bot_api.reply_message(token,FlexSendMessage('flex',flex))
                 lineNotifyMessage(token_notify,"/"+command)
 
-import os
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 80))
     app.run(host='0.0.0.0', port=port)

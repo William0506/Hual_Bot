@@ -1,7 +1,7 @@
 import json
 def me(command,displayName,pictureUrl,statusMessage):
     if command == "me":
-        with open("me.json",mode="r",encoding="utf-8") as file:
+        with open("C:\\Users\\User\\Documents\\GitHub\\Hual_Bot\\src\\Data\\me.json",mode="r",encoding="utf-8") as file:
             data = json.load(file)
             i = 0
             data["hero"]["url"]=pictureUrl
