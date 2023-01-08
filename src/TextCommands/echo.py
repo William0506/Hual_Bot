@@ -1,3 +1,3 @@
 def echo(command,content = ""):
     if command == "echo":
-        return content
+        return content+content
